@@ -1,0 +1,105 @@
+html .mceContentBody {
+	max-width: 770px;
+}
+
+a {
+	color: #151e26;
+}
+
+h1, h2, h3, h4, h5, h6,
+blockquote {
+	font-family: "Raleway", sans-serif;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 12px;
+}
+
+h6 {
+	font-size: 10px;
+}
+
+blockquote {
+	margin: 1.5em 0;
+	padding: 20px 0 20px 26px;
+	position: relative;
+	background-color: #f6f6f6;
+}
+
+blockquote:before {
+	content: "";
+	border-left: 8px solid #34495e;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+
+blockquote p {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+td,
+th,
+caption {
+	border: 1px solid #dedede;
+	padding: 8px 1.5em;
+}
+
+td a,
+th a,
+caption a {
+	color: #151e26;
+}
+
+ul, ol {
+	margin: 0 0 20px;
+	padding-left: 20px;
+}
+
+li > ul, li > ol {
+	margin-bottom: 0;
+	margin-left: 0;
+	padding-left: 20px;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	line-height: 1.6;
+	margin-bottom: 24px;
+	max-width: 100%;
+	overflow: auto;
+	padding: 24px;
+}
+
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}

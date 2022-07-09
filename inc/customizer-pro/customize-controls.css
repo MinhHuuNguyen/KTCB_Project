@@ -1,0 +1,34 @@
+#customize-controls .control-section-gt-go-pro .accordion-section-title,
+#customize-controls .control-section-gt-go-pro .accordion-section-title:hover,
+#customize-controls .control-section-gt-go-pro .accordion-section-title:focus {
+	background-color: #f7f7f7;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.control-section-gt-go-pro .accordion-section-title .button {
+	margin-top:  -4px;
+	font-weight: 400;
+	margin-left: 8px;
+}
+
+.rtl .control-section-gt-go-pro .accordion-section-title .button {
+	margin-left:  0;
+	margin-right: 8px;
+}
+
+#customize-theme-controls .control-panel-themes>.accordion-section-title,
+#customize-theme-controls .control-panel-themes>.accordion-section-title:hover {
+	margin-bottom: 0px;
+	border-bottom: none;
+}
+
+.link-doc a:hover {
+	color: #0073aa;
+}
+
+#customize-theme-controls .accordion-section-title.link-doc, 
+#customize-theme-controls .accordion-section-title.link-doc:hover {
+	background-color: #eeeeee;
+	border-left-color: #eeeeee;
+}

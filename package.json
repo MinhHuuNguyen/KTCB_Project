@@ -1,0 +1,11 @@
+{
+	"scripts": {
+		"css": "node-sass --output-style expanded --indent-type tab --indent-width 1 sass/style.scss -o .",
+		"postcss": "postcss style.css -o style.css --no-map -u autoprefixer --autoprefixer.browsers=\"last 2 versions, ie >= 9\"",
+		"watch": "node-sass --output-style expanded --indent-type tab --indent-width 1 --source-map true -w sass -r -o .",
+		"zip": "git archive -o bogaty-lite.zip --prefix=bogaty-lite/ HEAD",
+		"check": "phpcs --standard=WordPress --extensions=php . > check.txt",
+		"fix": "phpcbf --standard=WordPress --extensions=php .",
+		"start": "npm run css && npm run watch"
+	}
+}

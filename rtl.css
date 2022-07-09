@@ -1,0 +1,171 @@
+/*
+Theme Name: Bogaty
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+	text-align: right;
+}
+
+
+/* Elements */
+
+ul {
+	padding: 0;
+}
+
+
+/*Grid*/
+
+.grid {
+	margin-left: 0;
+	margin-right: -128px;
+}
+
+.grid > * {
+	padding-left: 0;
+	padding-right: 128px;
+}
+
+
+/* Layout */
+
+@media (min-width: 992px) {
+	.site-content .widget-area {
+		margin-right: auto;
+	}
+}
+
+header .entry-meta span:not(:last-child) {
+	margin-left: 40px;
+}
+
+header .entry-meta span:not(:last-child) {
+	margin-right: 0;
+}
+
+
+/* Menu */
+
+.main-navigation ul ul {
+	left: 0;
+	text-align: left;
+}
+
+.main-navigation ul ul ul {
+	right: -100%;
+	width: 100%;
+}
+
+
+/* Menu widget */
+
+.widget_nav_menu ul > li > a {
+	padding: 18px 27px 18px 0;
+}
+
+.widget_nav_menu .sub-menu > li > a {
+	padding-right: 4.5em;
+}
+
+.widget_nav_menu .sub-menu .sub-menu > li > a {
+	padding-right: 7.5em;
+}
+
+.dropToggle {
+	left: 0;
+	right: initial;
+}
+
+
+/* Social menu */
+
+.footer-info .jetpack-social-navigation li a {
+	margin-right: 10px;
+}
+
+
+/* Recent posts */
+
+.widget_bogaty-recent-posts .recent-post__image {
+	margin-right: 0;
+	margin-left: 20px;
+}
+
+.widget_bogaty-recent-posts ul {
+	padding: 0;
+}
+
+
+/* Widget */
+
+.sidebar-area .widget-title {
+	padding-right: 0;
+	padding-left: 24px;
+}
+
+.widget ul > li:before,
+.entry-content ul > li:before {
+	margin: 0 0 0 20px;
+}
+
+
+/* Others */
+
+.custom-logo-link {
+	margin: 0 0 0 15px;
+}
+
+blockquote {
+	padding: 20px 26px 20px 0;
+}
+
+ol.comment-list .children .comment > article {
+	padding: 20px 30px 20px 0;
+}
+
+#wp-calendar #prev {
+	text-align: right;
+}
+
+#wp-calendar #next {
+	text-align: left;
+}
+
+.nav-next {
+	text-align: left;
+}
+
+.comment-edit-link {
+	float: right;
+}
+
+.entry-meta .author .fn {
+	float: right;
+}
+
+.more-link i {
+	float: right;
+}
+
+body:not(.single) .format-quote > p,
+.format-quote .jetpack-the-excerpt > p {
+	padding: 43px 26px 43px 0;
+}
+
+.site-content article.format-quote > a {
+	margin-right: 26px;
+}
+
+.main-navigation li .sub-menu > li.menu-item-has-children > a:after {
+	top: 7px;
+	transform: rotate(-90deg);
+}
