@@ -11,43 +11,47 @@
 
 ?>
 
-	</div><!-- #content -->
+	<script src='<?php echo get_template_directory_uri()?>/assets/js/main.js'></script>
+	</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<aside id="sidebar-footer" class="sidebar-footer widget-area" role="complementary">
+		<!-- <aside id="sidebar-footer" class="sidebar-footer widget-area" role="complementary">
 			<div class="container">
 				<div class="grid grid--3">
-					<?php dynamic_sidebar( 'sidebar-2' ); ?>
+					<?php 
+					// dynamic_sidebar( 'sidebar-2' ); ?>
 				</div>
 			</div>
-		</aside><!-- .sidebar-footer  -->
-		<div class="container">
+		</aside> -->
+		<!-- .sidebar-footer  -->
+		<!-- <div class="container">
 			<div class="footer-info">
 				<div class="site-info">
 
 					<?php
 					/* translators: link to wordpress.org */
-					printf( esc_html__( 'Proudly powered by %s', 'bogaty-lite' ), '<a href="' . esc_url( 'https://wordpress.org/' ) . '">WordPress</a>' );
+					// printf( esc_html__( 'Proudly powered by %s', 'bogaty-lite' ), '<a href="' . esc_url( 'https://wordpress.org/' ) . '">WordPress</a>' );
 					?>
 
 					<span class="sep"> | </span>
 					<?php
 						/* translators: placeholder replaced with string */
-						printf( esc_html__( 'Theme: %1$s by %2$s.', 'bogaty-lite' ), '<a href="https://gretathemes.com/wordpress-themes/bogaty/">Bogaty Lite</a>', 'GretaThemes' );
+						// printf( esc_html__( 'Theme: %1$s by %2$s.', 'bogaty-lite' ), '<a href="https://gretathemes.com/wordpress-themes/bogaty/">Bogaty Lite</a>', 'GretaThemes' );
 					?>
-				</div><!-- .site-info -->
+				</div>
 
 				<?php
-				if ( function_exists( 'jetpack_social_menu' ) ) {
-					jetpack_social_menu();
-				}
+				// if ( function_exists( 'jetpack_social_menu' ) ) {
+				// 	jetpack_social_menu();
+				// }
 				?>
 			</div>
-		</div>
+		</div> -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<?php wp_footer(); ?>
+<?php 
+// wp_footer(); ?>
 
 </body>
 </html>
