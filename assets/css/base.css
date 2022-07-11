@@ -1,3 +1,9 @@
+
+html.html-main {
+    margin: 0!important;
+}
+
+
 ul {
     padding-left : unset;
     margin-top: 0;
@@ -63,4 +69,8 @@ ul {
     transform: rotate(90deg);
     transition: transform 0.4s ease-out;
     color : red;
+}
+
+.hiding-text {
+    color: transparent;
 }
